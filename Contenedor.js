@@ -71,7 +71,7 @@ class Contenedor {
             data = JSON.parse(data)
             const wanted = data.filter(condition => condition.id == number)
             if(wanted.length > 0) {
-                return wanted
+                return wanted[0]
             } else {
                 console.log("null");
                 return null
